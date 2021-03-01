@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vans Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"  >
+</head>
+<body>
+    <section>
+        <div class="v-shape"></div>
+    <nav>
+        <a href="#"><img src="vans-logo.png" alt="logo" class="logo"></a>
+        <ul class="nav-sec1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mens</a></li>
+            <li><a href="#">Womens</a></li>
+            <li><a href="#">Skate</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav-sec2">
+            <li><i class="fas fa-search"></i></li>
+            <li><i class="fas fa-shopping-cart"></i></li>
+        </ul>
+        <div class="toggle" onclick="toggle();"></div>
+    </nav>
+    <div class="content">
+        <div class="text-box">
+        <h2><span class="text-vans">VANS</span><span class="text-p-vans"> BLACK WHITE OLD SKOOL</span></h2>
+        <p><span>OVERVIEW</span>
+            <br>
+            <span class="p-vans"> Old Skool, Vans classic skate shoe and the first to bear the iconic side stripe, has a low-top lace-up silhouette with a durable suede and canvas upper with padded tongue and lining and Vans signature Waffle Outsole.</span></p>
+            <div class="btn-box">
+            <a href="#" class="dropdown">Size | <i class="fas fa-chevron-down"></i></a>
+            <button type="button" aria-label="Add to cart">Add to cart</button>
+        </div>
+        </div>
+    <div class="image-box">
+        <img src="shoes/old-skool-bw.png" class="vans" alt="skool-bw">
+    </div>
+    </div>
+    <ul class="image-btn">
+        <li><img src="shoes/old-skool-black-white.png" alt="skool-bw" onclick="imgSlider('shoes/old-skool-bw.png');changeVansColor('#171717');changeTextColor('#171717');changeParagraph('Old Skool, Vans classic skate shoe and the first to bear the iconic side stripe, has a low-top lace-up silhouette with a durable suede and canvas upper with padded tongue and lining and Vans signature Waffle Outsole.');changeTextParagraph(' BLACK WHITE OLD SKOOL')"></li>
+        <li><img src="shoes/old-skool-green.png" alt="skool-g" onclick="imgSlider('shoes/old-skool-g.png');changeVansColor('#376565');changeTextColor('#376565');changeParagraph('The Old Skool, the Vans classic skate shoe and first to bare the iconic sidestripe, is a low top lace-up featuring sturdy canvas and suede uppers, re-enforced toe caps to withstand repeated wear, padded collars for support and flexibility, and signature rubber waffle outsoles.');changeTextParagraph(' GREEN WHITE OLD SKOOL')"></li>
+        <li><img src="shoes/old-skool-port-royale.png" alt="skool-pr" onclick="imgSlider('shoes/old-skool-pr.png');changeVansColor('#6F2636');changeTextColor('#6F2636');changeParagraph('The Classic Sport Old Skool, the Vans classic skate shoe and first to bare the iconic sidestripe, is a low top lace-up featuring sturdy canvas and suede uppers, re-enforced toe caps to withstand repeated wear, padded collars for support and flexibility, and signature.');changeTextParagraph(' PORT ROYALE OLD SKOOL')"></li>
+        <li><img src="shoes/old-skool-golden-nugget.png" alt="skool-gd" onclick="imgSlider('shoes/old-skool-gd.png');changeVansColor('#F8A038');changeTextColor('#F8A038');changeParagraph('The Old Skool, the Vans classic skate shoe and first to bare the iconic sidestripe, is a low top lace-up featuring sturdy canvas and suede uppers, re-enforced toe caps to withstand repeated wear, padded collars for support and flexibility, and signature rubber waffle outsoles.');changeTextParagraph(' GOLDEN NUGGET OLD SKOOL')"></li>
+    </ul>
+    <ul class="social-media-btn">
+        <h4>FOLLOW VANS</h4>
+        <li><i class="fab fa-facebook-f"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-youtube"></i></li>
+    </ul>
+    <p class="author">Created by Kim</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
